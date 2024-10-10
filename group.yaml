@@ -12,3 +12,34 @@ spec:
   parent: ops
   children: [backstage, other]
   members: [jdoe]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: IDP
+  description: The infra business unit
+spec:
+  type: team
+  profile:
+    displayName: Internal Developer Platform
+    email: itops@nuki.io
+    picture: https://nuki.io/en/
+  parent: idpadmins
+  children: [backstage, cncf]
+  members: [Aspalath0s]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: IDP
+  description: The infra business unit
+spec:
+  type: team
+  profile:
+    displayName: cncf
+    email: itops@nuki.io
+    picture: https://nuki.io/en/
+  parent: idpadmins
+  children: [backstage]
+  members: [Aspalath0s]
