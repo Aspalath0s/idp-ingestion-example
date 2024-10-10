@@ -32,7 +32,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: IDP
+  name: CNCF
   description: The infra business unit
 spec:
   type: team
@@ -40,6 +40,6 @@ spec:
     displayName: cncf
     email: itops@nuki.io
     picture: https://nuki.io/en/
-  parent: idpadmins
+  parent: IDP
   children: [backstage]
   members: [Aspalath0s]
